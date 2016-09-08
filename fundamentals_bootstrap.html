@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/main.js"></script>
+    <script>
+      var eric = "cool";
+    </script>
+    <!-- bootstrapped our webpage -->
+    <style>
+      body {
+        background-color: beige;
+      }
+      .bg-orange {
+        background-color: orange;
+      }
+      .bg-grey {
+        background-color: lightgrey;
+      }
+      .glyphicon {
+        /*font-size: 100px;*/
+      }
+      .footer {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 60px;
+        background-color: darkgrey;
+      }
+    </style>
+  </head>
+  <body id="kaia">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a id="nav-brand" class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+          <li><a href="#">Page 3</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- JUMBOTRON!!!-->
+    <div class="jumbotron text-center bg-orange">
+      <h1 id="company-name">Fundamentals Studios Inc.</h1>
+      <p>Making Websites and Stuff</p>
+      <form action="" method="">
+        <label>Subscribe to our newsletter:</label><br>
+        <input type="email" placeholder="e.g. john@doe.com">
+        <input class="btn btn-success" type="submit" value="Subscribe">
+      </form>
+    </div>
+    <!-- grid layout -->
+    <div class="container text-center bg-grey">
+      <h2>Services</h2>
+      <p>These are services that we offer</p>
+      <!-- at the small resolution, i would like to see 2 services per row -->
+      <!-- at the xs resolution, i would like to see 1 service per row -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:pink">Web Development</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:gold">Mobile App Development</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:pink">DevOps</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:gold">Database</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:pink">Emailers</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:gold">Cooking</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:pink">Cleaning</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:gold">Partying</div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs" style="background-color:pink">Dancing</div>
+    </div>
+
+    <div class="container-fluid text-center">
+      <h2>Portfolio</h2>
+      <p>These are the wonderful projects we've worked on.</p>
+      <!-- render 6 different glyphicons -->
+      <!-- lay them out using the following rules -->
+      <!-- large, 6 on each row -->
+      <!-- med, 3 on each row -->
+      <!-- sm, 2 on each row -->
+      <!-- xs, 1 on each row -->
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <span class="glyphicon glyphicon-eye-open"></span>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <span class="glyphicon glyphicon-plane"></span>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <span class="glyphicon glyphicon-magnet"></span>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <span class="glyphicon glyphicon-screenshot"></span>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <span class="glyphicon glyphicon-random"></span>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12">
+        <span class="glyphicon glyphicon-hand-up"></span>
+      </div>
+    </div>
+
+    <!-- images -->
+    <!-- <div class="container">
+      <img src="img/mario.jpg" class="img-circle">
+    </div> -->
+    <!-- contact forms -->
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="" method="">
+        <div class="row">
+          <div class="col-sm-7">
+            <p>Contact us and learn more about our services.</p>
+            <p><span class="glyphicon glyphicon-cog"></span>Fundamental Studios Inc.</p>
+            <p><span class="glyphicon glyphicon-magnet"></span>142 W. Hastings Street</p>
+            <p><span class="glyphicon glyphicon-ok"></span>Vancouver, BC</p>
+            <p><span class="glyphicon glyphicon-phone"></span>+1 604.555.5555</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>info@fundamentals.com</p>
+          </div>
+          <div class="col-sm-5">
+            <div class="row">
+              <div class="col-sm-6">
+                <input class="form-control" type="text" placeholder="Name">
+              </div>
+
+              <div class="col-sm-6">
+                <input class="form-control" type="email" placeholder="Email">
+              </div>
+
+              <div class="col-sm-12">
+                <textarea class="form-control" placeholder="Comment"></textarea>
+              </div>
+
+              <div>
+                <input class="btn btn-primary pull-right" type="submit" value="Send Message">
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- create links to your social medias channels using font awesome! -->
+    <footer class="footer">
+      Find us on:  <i class="fa fa-twitter fa-lg"></i>
+                   <i class="fa fa-facebook fa-lg"></i>
+                   <i class="fa fa-google-plus fa-lg"></i>
+                   <i class="fa fa-instagram fa-lg"></i>
+                   <i class="fa fa-linkedin fa-lg"></i>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -->
